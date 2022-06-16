@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C1C1C"
+    android:backgroundTint="#FFFF"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="296dp"
+        android:backgroundTint="#FF9800"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.342"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/btnModulus"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF9800"
+        android:text="%"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
+    <Button
+        android:id="@+id/btnDivide"
+        android:layout_width="86dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF9800"
+        android:text="/"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="@+id/gdl"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSubtract" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilInputOne"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="273dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieInputOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input One"
+            android:textSize="23dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilInputTwo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="266dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilInputOne">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieInputTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input Two"
+            android:textSize="23dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/BtnSubtract"
+        android:layout_width="74dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="88dp"
+        android:backgroundTint="#FF9800"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd"
+        app:layout_constraintTop_toBottomOf="@+id/tilInputTwo" />
+
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="129dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="8dp"
+        android:text="output"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilInputTwo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
