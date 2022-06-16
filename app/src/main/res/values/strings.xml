@@ -2,4 +2,7 @@
     <string name="app_name">Assesment</string>
     <string name="number_is_required">input num</string>
     <string name="Input_num_required">Input num</string>
+    <string name="input_one">Input One</string>
+    <string name="input_two">Input Two</string>
+    <string name="output">output</string>
 </resources>
